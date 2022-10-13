@@ -15,5 +15,5 @@ app
 route(app);
 
 app.listen(process.env.port || 5000, () => {
-  console.log(`Example app listening on port ${process.env.port}`);
+  console.log("Example app listening on port");
 });
