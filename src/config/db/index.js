@@ -10,7 +10,7 @@ const connectDB = async () => {
     });
     console.log("Connected to mongoDB");
   } catch (error) {
-    console.log(error);
+    console.log("Khongketnoidb");
   }
 };
 
