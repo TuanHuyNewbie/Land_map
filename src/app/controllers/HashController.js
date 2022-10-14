@@ -73,7 +73,7 @@ class Hash{
     }
     test(req,res, next){
 
-        res.send('Thành Công Rồi')
+        res.send(process.env.MONGODB_URI)
     }
 
     getItemUA(req, res, next){
