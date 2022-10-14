@@ -1,11 +1,13 @@
+URL = "mongodb+srv:tuanhuy:tuanhuy123@cluster0.s39zawz.mongodb.net/Test?retryWrites=true&w=majority"
 require("dotenv").config();
+
 const mongoose = require("mongoose");
 
-URL = "mongodb+srv:tuanhuy:tuanhuy123@cluster0.s39zawz.mongodb.net/Test?retryWrites=true&w=majority"
+
 
 const connectDB = async () => {
   try {
-    await mongoose.connect(process.env.MONGODB_URI || URL, {
+      await mongoose.connect(process.env.MONGODB_URI || URL, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
