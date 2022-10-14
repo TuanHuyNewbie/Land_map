@@ -14,6 +14,7 @@ class Hash{
         const ldescription = req.body.description
         const ltokenid = req.body.tokenid
         const limage = req.body.image
+        //console.log(lname)
         //res.json(req.body)
         const data = new hash({ 
             txhash: ltxhash
@@ -38,6 +39,7 @@ class Hash{
             /*const dataToSave1 =*/ data1.save();
             /*const dataToSave2 =*/ data2.save();
             //res.status(200).json(dataToSave)
+            //res.send(data)
             res.send('Da luu vao database');
         }
         catch (error) {
