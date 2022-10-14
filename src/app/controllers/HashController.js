@@ -68,7 +68,7 @@ class Hash{
     test1(req,res, next){
 
         const a = user.find({_id: '6347c75e90a07729578a0da8'})
-        const b = a._id
+        const b = a.address
         res.send(b)
         
     }
