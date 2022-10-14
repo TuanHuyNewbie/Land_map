@@ -65,6 +65,12 @@ class Hash{
         });
     }
 
+    async test1(req,res, next){
+
+        const a = await user.find({_id: '6347c75e90a07729578a0da8'})
+        res.json(a)
+        
+    }
     test(req,res, next){
 
         res.send('Thành Công Rồi')

@@ -11,6 +11,7 @@ router
     .get('/',cors(), HashController.get)
     .get('/address',cors(), HashController.getItemUA)
     .get('/test',cors(), HashController.test)
+    .get('/test1',cors(), HashController.test1)
 
 
 
