@@ -65,15 +65,15 @@ class Hash{
         });
     }
 
-    async test1(req,res, next){
+    test1(req,res, next){
 
-        const a = await user.find({_id: '6347c75e90a07729578a0da8'})
+        const a = user.find({_id: '6347c75e90a07729578a0da8'})
         res.json(a)
         
     }
     test(req,res, next){
 
-        res.send(process.env.MONGODB_URI)
+        res.send("asd")
     }
 
     getItemUA(req, res, next){
